@@ -1,0 +1,26 @@
+<div class="container">
+  
+  <div class="login_container">
+
+    <div class="graphic_symbol center-align">
+      <i class="material-icons">person</i>
+    </div>
+    
+    <p class="error" *ngIf="error">{{ error }}</p>
+    <div class="button_container">
+      <button md-raised-button class="login_button #1976d2 blue darken-2 btn-large" (click)="loginFb()" id="fb">Login With Facebook</button><br>
+    </div>
+    <div class="button_container">
+      <button md-raised-button class="login_button #bf360c deep-orange darken-4 btn-large" (click)="loginGoogle()" id="google">Login With Google</button>
+    </div>
+    <div class="button_container">
+      <button md-raised-button class="login_button #90a4ae blue-grey lighten-2 btn-large" routerLink="/login-email" id="email">Email</button>
+    </div>
+
+    <p class="form_link center-align">
+      <a routerLink="/signup" routerLinkActive="active" class="alc">No account? <strong>Create one here</strong></a>
+    </p>
+  </div>
+
+</div>
+

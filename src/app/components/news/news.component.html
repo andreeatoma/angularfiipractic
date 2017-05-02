@@ -1,0 +1,12 @@
+<div class="page_container news_page">
+  <div class="news_page_container">
+    <md-toolbar class="space-between #cfd8dc blue-grey lighten-4">
+      <span class="center">History Today</span>
+      <a class="btn-floating waves-effect waves-light red right #d1c4e9 deep-purple lighten-4" (click)="refreshFeed()"><i class="material-icons">refresh</i></a>
+    </md-toolbar>
+    <div class="container">
+      <his-newsfeeditem *ngFor="let feed of feeds" [feed]="feed" ></his-newsfeeditem>
+      <his-spinner *ngIf="!feeds.length"></his-spinner>
+    </div>
+  </div>
+</div>

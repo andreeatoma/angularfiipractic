@@ -1,1 +1,121 @@
-/* You can add global styles to this file, and also import other style files */
+@import '~@angular/material/prebuilt-themes/deeppurple-amber.css';
+$theme_color: #673ab7;
+
+body{
+    margin: 0;
+    padding: 0; 
+    background-color:#E2E4E6;
+}
+.login_button{
+    width: 100%;
+    text-transform: uppercase;
+    span{
+        color: #fff;
+    }
+}
+.input_container{
+    width: 100%;
+}
+.graphic_symbol i{
+    font-size: 100px;
+    color: $theme_color;
+}
+.login_container{
+    max-width: 400px;
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 5px;
+}
+.addwork_container{
+    margin: 2em auto;
+    background: #fff;
+    padding: 2em;
+    border-radius: 5px;
+    padding-bottom: 60px;
+}
+.button_container{
+    margin-bottom: 15px;
+}
+.form_link{
+    margin-top: 10px;
+}
+.error {
+    background:#f1f0ef;
+    padding:1em;
+    width:100%;
+    display:block;
+    margin-bottom:20px;
+}
+.home_page{
+    background: #fff;
+}
+#login_info{
+    img{
+        width: auto;
+    }
+}
+.row .col{
+    padding: 0;
+}
+#this_day{
+    .mat-card{
+        padding: 16px;
+    }
+    overflow: auto;
+}
+.page-footer{
+    padding-top: 0;
+}
+.page_container{
+    min-height: calc(100vh - 115px);
+    margin-top: 20px;
+    // overflow: auto;
+    margin: 0;
+}
+#home_left{
+    .mat-card{
+        box-shadow: none;
+    }
+    img{
+       width: auto;
+    }
+    height: calc(100vh - 115px);
+    border-right: 1px solid #546e7a;
+}
+.row{
+    margin-bottom: 0;
+}
+.white_col{
+    color: #fff;
+}
+.news_page_container{
+    height: 100%;
+    overflow: auto;
+}
+.space-between{
+    justify-content: space-between;
+    .mat-toolbar-row{
+        justify-content: space-between;
+    }
+}
+
+input:not([type]), input[type=text], input[type=password], input[type=email], input[type=url], input[type=time], input[type=date], input[type=datetime], input[type=datetime-local], input[type=tel], input[type=number], input[type=search], textarea.materialize-textarea{
+    height: auto;
+    border-bottom: none;
+    margin: auto;
+}
+input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
+    border-bottom: none;
+    box-shadow: none;
+}
+.form_select{
+    margin-top: 20px;
+    width: 100%;
+}
+.submit_button{
+    margin-top: 20px;
+}
+.reset_m{
+    margin: auto!important;
+}

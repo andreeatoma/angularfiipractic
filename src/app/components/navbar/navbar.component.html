@@ -1,0 +1,17 @@
+
+<md-toolbar class="main_toolbar">
+  <nav class="main_nav #673ab7 deep-purple">
+    
+    <ul class="menu_list">
+      <li class="menu_item"><a routerLink="home">HistoryShelf</a></li>
+      <li class="menu_item"><a routerLink="news">News</a></li>
+      <li class="menu_item"><a routerLink="workstore">WorkStore</a></li>
+      <li class="menu_item" *ngIf="(af.auth | async)"><a routerLink="add-work">Add Work</a></li>
+      <li class="menu_item right" *ngIf="!(af.auth | async)"><a routerLink="login">Login</a></li>
+      <li class="menu_item right" *ngIf="(af.auth | async)"><a (click)="logout()">Logout</a></li>
+      <li class="menu_item right" *ngIf="(af.auth | async)"><a routerLink="members">{{ name.auth.displayName }}</a></li>     
+    </ul>
+   
+  </nav>
+  
+</md-toolbar>

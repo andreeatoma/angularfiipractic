@@ -1,0 +1,41 @@
+<div class="page_container home_page">
+  <div class="row">
+    <div class="col s12 m12 l8" id="home_left">
+      <md-toolbar class="#78909c blue-grey lighten-1">
+        <span class="center white_col">HistoryShelf is </span>
+        <span class="pointer-cursor waves"></span>
+      </md-toolbar>
+      <md-card class="" >
+          <md-card-header>
+            <div md-card-avatar class="example-header-image"></div>
+            <md-card-title><h4 class="center-align ">To Reveal the thruths of this world...</h4></md-card-title>
+          </md-card-header>
+          <div class="center-align">
+            <img md-card-image src="assets/images/masonic.gif">
+          </div>
+          
+          <md-card-content>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur est unde nam consequatur, 
+              laudantium, illo repellendus illum possimus quisquam saepe deleniti, corrupti neque, 
+              voluptates quam ab maxime voluptatibus ducimus fugiat?
+            </p>
+          </md-card-content>
+        
+      </md-card>
+    </div>
+    <div class="col s12 m12 l4" id="this_day">
+      <md-toolbar class="#78909c blue-grey lighten-1">
+        <span class="center white_col">Today in History (RSS Feed from BBC)</span>
+      </md-toolbar>
+
+      <his-thisdayinhistory *ngFor="let feed of feeds | slice:0:2;" [feed]="feed" ></his-thisdayinhistory>
+      <his-spinner *ngIf="!feeds.length"></his-spinner>
+    </div>
+  </div>
+</div>
+  
+  
+    
+    
+  
